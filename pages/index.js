@@ -3,6 +3,7 @@ import Script from 'next/script'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.css'
+import Link from 'next/link'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -23,10 +24,11 @@ export default function Home() {
 
       <nav className={styles.mainnav}>
         <ul className={inter.className}>
-          <li>Home</li>
-          <li>About</li>
-          <li>Blog</li>
-          <li>Contact</li>
+          {/* home and about link not working */}
+         <Link href='/'><li>Home</li></Link>
+         <Link href='/about'scroll={false} > <li>About</li></Link>
+         <Link href='/blogPages/contact'><li>Contact</li></Link>
+         <Link href='/blogPages/blog'><li>Blogs</li></Link>
         </ul>
       </nav>
       <main className={styles.main}>

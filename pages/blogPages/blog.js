@@ -8,7 +8,7 @@ const blog = () => {
     </Head>
     
     <div>
-      This is the about comonent
+      This is the blog component
     </div>
     </>
   )

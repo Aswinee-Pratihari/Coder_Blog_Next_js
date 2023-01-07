@@ -8,7 +8,7 @@ const contact = () => {
     </Head>
     
     <div>
-      This is the about comonent
+      This is the contact page
     </div>
     </>
   )
